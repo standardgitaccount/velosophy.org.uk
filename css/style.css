@@ -1,7 +1,6 @@
 html, body {
   height: 100%;
   margin: 0;
-  padding: 0;
 }
 
 body {
@@ -12,49 +11,42 @@ body {
 
 main {
   flex-grow: 1;
-  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
+/* GRID CONTAINER */
 .button-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* grows responsively */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  width: 95vw;
+  width: 100%;
   max-width: 1400px;
-  height: 90vh;
-  margin: 0 auto;
-  padding: 10px;
-  box-sizing: border-box;
+  aspect-ratio: 3 / 2; /* ⬅️ forces the entire grid to be a certain shape */
 }
 
+/* BUTTON (SQUARE) */
 .btn-grid {
-  display: block;
-  width: 100%;
-  padding-top: 100%; /* square aspect */
   position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* ⬅️ perfect square for each button */
   background-color: #333;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  overflow: hidden;
   text-decoration: none;
+  overflow: hidden;
   color: white;
   transition: opacity 0.3s ease;
 }
 
+/* TEXT LABEL */
 .btn-grid::after {
   content: attr(data-label);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px #000;
-  text-align: center;
-}
-
-
-.btn-grid:hover {
-  opacity: 0.85;
-}
+  font-s
