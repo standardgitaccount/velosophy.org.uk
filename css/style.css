@@ -7,6 +7,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
@@ -14,36 +15,41 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .button-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
-  max-width: 900px;
   width: 100%;
+  max-width: 900px;
   height: 70vh;
   margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
+
 .btn-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
   background-color: #333;
   background-size: cover;
   background-position: center;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
-  border-radius: 10px;
   text-align: center;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 10px;
   transition: opacity 0.3s ease;
-  aspect-ratio: 1 / 1;
-  min-width: 0;
   overflow: hidden;
+  min-width: 0; /* fixes overflow in grid */
 }
+
 
 .btn-grid:hover {
   opacity: 0.85;
