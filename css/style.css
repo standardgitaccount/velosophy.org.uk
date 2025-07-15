@@ -4,8 +4,16 @@ html, body {
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
-  padding: 20px 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-grid-container {
