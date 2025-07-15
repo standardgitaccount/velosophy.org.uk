@@ -25,4 +25,4 @@ document.addEventListener("DOMContentLoaded", () => {
     const href = btn.getAttribute("href");
     btn.setAttribute("data-label", labels[href] || "");
   });
-});
+}); 
