@@ -16,9 +16,19 @@ main {
 }
 
 .button-grid-container {
-  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px; /* was 900px */
   margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+
+  /* Taller layout on large screens */
+  height: clamp(500px, 80vh, 1100px); /* was 70vh / 1000px */
 }
+
 
 /* Force square buttons using padding trick */
 .btn-grid {
