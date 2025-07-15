@@ -1,21 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Load header
   fetch("header.html")
-    .then(response => response.text())
+    .then(res => res.text())
     .then(data => document.getElementById("header").innerHTML = data);
 
-  // Load footer and set year
   fetch("footer.html")
-    .then(response => response.text())
+    .then(res => res.text())
     .then(data => {
       document.getElementById("footer").innerHTML = data;
-      const yearSpan = document.getElementById("year");
-      if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-      }
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
     });
 
-  // Set button labels (optional enhancement)
+  // Optional: apply labels as data attributes
   const labels = {
     "blog.html": "Blog",
     "detailing.html": "Detailing",
@@ -27,10 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".btn-grid").forEach(btn => {
     const href = btn.getAttribute("href");
-    const label = labels[href];
-    if (label) {
-      btn.innerHTML = `<span class="btn-label">${label}</span>`;
-    }
+    btn.setAttribute("data-label", labels[href] || "");
   });
 });
-
