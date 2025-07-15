@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "blog.html": "Blog",
     "detailing.html": "Detailing",
     "driving.html": "Driving",
+    "maintenance.html": "Maintenance",
     "photography.html": "Photography",
-    "reports.html": "Reports",
     "reviews.html": "Reviews"
   };
 
