@@ -19,15 +19,14 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   gap: 20px;
-  width: 100%;
-  max-width: 1000px; /* was 900px */
+  width: 90vw;        
+  max-width: 1400px;  
+  height: 90vh;          
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
-
-  /* Taller layout on large screens */
-  height: clamp(500px, 80vh, 1100px); /* was 70vh / 1000px */
 }
+
 
 
 /* Force square buttons using padding trick */
