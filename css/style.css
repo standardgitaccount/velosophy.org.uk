@@ -49,20 +49,6 @@ main {
   text-shadow: 1px 1px 2px #000;
 }
 
-.button-grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  gap: 20px;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 10px;
-  box-sizing: border-box;
-
-  /* Adjust height dynamically: more space on larger screens */
-  height: clamp(400px, 75vh, 1000px);
-}
-
 .btn-grid:hover {
   opacity: 0.85;
 }
