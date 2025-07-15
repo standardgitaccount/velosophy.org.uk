@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (year) year.textContent = new Date().getFullYear();
     });
 
+  // Optional: apply labels as data attributes
   const labels = {
     "blog.html": "Blog",
     "detailing.html": "Detailing",
