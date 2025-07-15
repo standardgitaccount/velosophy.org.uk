@@ -24,12 +24,11 @@ main {
   gap: 20px;
   width: 100%;
   max-width: 900px;
-  height: 70vh;
+  height: clamp(400px, 70vh, 800px);
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
 }
-
 
 .btn-grid {
   display: flex;
