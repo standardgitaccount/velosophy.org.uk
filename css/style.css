@@ -17,24 +17,21 @@ main {
 
 .button-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* grows responsively */
   gap: 20px;
-  width: 90vw;        
-  max-width: 1400px;  
-  height: 90vh;          
+  width: 95vw;
+  max-width: 1400px;
+  height: 90vh;
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
 }
 
-
-
-/* Force square buttons using padding trick */
 .btn-grid {
-  position: relative;
   display: block;
   width: 100%;
-  padding-top: 100%; /* Makes it square */
+  padding-top: 100%; /* square aspect */
+  position: relative;
   background-color: #333;
   background-size: cover;
   background-position: center;
@@ -45,18 +42,18 @@ main {
   transition: opacity 0.3s ease;
 }
 
-/* Centered label */
 .btn-grid::after {
   content: attr(data-label);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
   text-shadow: 1px 1px 2px #000;
+  text-align: center;
 }
+
 
 .btn-grid:hover {
   opacity: 0.85;
