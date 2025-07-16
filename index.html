@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Velosophy</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Velosophy - Retro</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h1>Velosophy</h1>
+    </header>
 
-  <!-- Header will load here -->
-  <div id="header"></div>
+    <nav class="button-grid">
+      <a href="blog.html">Blog</a>
+      <a href="detailing.html">Detailing</a>
+      <a href="driving.html">Driving</a>
+      <a href="photography.html">Photography</a>
+      <a href="reports.html">Reports</a>
+      <a href="reviews.html">Reviews</a>
+    </nav>
 
-  <main>
-    <div class="grid-container">
-      <a href="blog.html" class="grid-button" data-label="Blog"></a>
-      <a href="detailing.html" class="grid-button" data-label="Detailing"></a>
-      <a href="driving.html" class="grid-button" data-label="Driving"></a>
-      <a href="photography.html" class="grid-button" data-label="Photography"></a>
-      <a href="reports.html" class="grid-button" data-label="Reports"></a>
-      <a href="reviews.html" class="grid-button" data-label="Reviews"></a>
+    <div class="gif-container">
+      <img src="assets/spin.gif" alt="Spinning gif placeholder">
+      <p style="font-size: 0.9em; color: #ccc;">(Replace <code>assets/spin.gif</code> with your own GIF)</p>
     </div>
-  </main>
 
-  <!-- Footer will load here -->
-  <div id="footer"></div>
+    <footer>
+      <hr>
+      <p>&copy; <span id="year"></span> Velosophy - All Rights Preserved</p>
+    </footer>
+  </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
