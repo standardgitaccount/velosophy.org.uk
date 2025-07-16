@@ -1,54 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Square Buttons</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 10px;
-      font-family: sans-serif;
-      background: #f0f0f0;
-    }
-
-    #grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 10px;
-    }
-
-    #grid > div {
-      background-color: hotpink;
-      color: white;
-      font-size: 4vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 12px;
-      aspect-ratio: 1 / 1; /* Keeps square shape */
-      cursor: pointer;
-      transition: transform 0.2s, background-color 0.2s;
-    }
-
-    #grid > div:hover {
-      background-color: deeppink;
-      transform: scale(1.05);
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velosophy</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="grid">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-  </div>
+  <header>
+    <h1>Velosophy</h1>
+  </header>
+
+  <main>
+    <div class="grid-container">
+      <a href="blog.html" class="grid-button" data-label="Blog"></a>
+      <a href="detailing.html" class="grid-button" data-label="Detailing"></a>
+      <a href="driving.html" class="grid-button" data-label="Driving"></a>
+      <a href="photography.html" class="grid-button" data-label="Photography"></a>
+      <a href="reports.html" class="grid-button" data-label="Reports"></a>
+      <a href="reviews.html" class="grid-button" data-label="Reviews"></a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Velosophy</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
