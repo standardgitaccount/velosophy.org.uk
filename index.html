@@ -1,38 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Velosophy - Retro</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Strategy Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Strategy
+  * Template URL: https://bootstrapmade.com/strategy-bootstrap-agency-template/
+  * Updated: Jun 06 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Velosophy</h1>
-    </header>
 
-    <nav class="button-grid">
-      <a href="blog.html">Blog</a>
-      <a href="detailing.html">Detailing</a>
-      <a href="driving.html">Driving</a>
-      <a href="photography.html">Photography</a>
-      <a href="reports.html">Reports</a>
-      <a href="reviews.html">Reviews</a>
-    </nav>
+<body class="index-page">
 
-    <div class="gif-container">
-      <img src="assets/spin.gif" alt="Spinning gif placeholder">
-      <p style="font-size: 0.9em; color: #ccc;">(Replace <code>assets/spin.gif</code> with your own GIF)</p>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Velosophy</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="index.html#repertoire"><span>Repertoire</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="photohraphy.html">Automotive Photography</a></li>
+              <li><a href="driving.html">Driving Acumen</a></li>
+              <li><a href="detailing.html">Vehicle Detailing</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="index.html#committee"><span>Committee</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="alex.html">Alex</a></li>
+              <li><a href="caleb.html">Caleb</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#repertoire">Discover</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 content-col" data-aos="fade-up">
+            <div class="content">
+              <div class="agency-name">
+                <h5>Welcome to</h5>
+              </div>
+
+              <div class="main-heading">
+                <h1 style="color: #e3a026;">Velosophy</h1>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="description">
+                    <p>
+                    <b>Velosophy</b> 
+                        <button style="color: #c68d23;" id="soundButton" class="btn"><i class="bi bi-volume-up-fill"> Listen</i></button>
+                        <audio id="sound" src="velosophy.mp3"></audio> <br>
+                    <i>Noun</i> <br> 
+                    Articulated as veh-LOH-suh-fee and phonetically transcribed as /vɛˈlɒsəfi/ <br>
+                    Meaning the philosophy of velocity, is a resourceful compendium focused on the automotive realm. It synthesizes diverse elements such as car detailing, driving acumen, automotive photography, and the overarching automotive culture, all examined through a scholarly perspective.</p>
+              </div>
+
+              <div class="cta-button">
+                <a href="#repertoire" class="btn">
+                  <span>Our Repertoire</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="zoom-out">
+            <div class="visual-content">
+              <div class="fluid-shape">
+                <img src="crest.png" alt="Abstract Fluid Shape" class="fluid-img">
+                <!-- img src="assets/img/abstract/abstract-1.webp" alt="Abstract Fluid Shape" class="fluid-img" -->
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    
+    <!-- Services Section -->
+    <section id="repertoire" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Discover</h2>
+        <div><span>Our Repertoire</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="service-header">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+              <div class="service-intro">
+                <h2 class="service-heading">
+                  <div>Content Defined by</div>
+                  <div><span>Rigor and Excellence</span></div>
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="service-summary">
+                <p>
+                  We are dedicated to producing professional academic reports that exemplify rigor and excellence. Our team of graduates guarantees that each report is fully referenced and cited, adhering to the highest academic standards with a commitment to quality over quantity. The content published in our repertoire meets the needs of automotive enthusiasts, professionals, and scholars alike.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-car-front-fill"></i>
+              </div>
+              <a href="driving.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="driving.html">
+                  Driving <span>Acumen</span>
+                </a>
+              </h3>
+              <p>
+                Explore the art of driving with our Driving Acumen section, where we provide expert insights and techniques to enhance your driving skills. From advanced maneuvers to safety strategies, discover how to become a more confident and capable driver.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-bucket-fill"></i>
+              </div>
+              <a href="detailing.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="detailing.html">
+                  Vehicle <span>Detailing</span>
+                </a>
+              </h3>
+              <p>
+                Delve into the world of Vehicle Detailing, where we share essential tips and techniques for maintaining your car's appearance and performance. Learn about the best products and methods to keep your vehicle looking pristine and well-cared-for.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-camera-fill"></i>
+              </div>
+              <a href="photography.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="photography.html">
+                  Automotive <span>Photography</span>
+                </a>
+              </h3>
+              <p>
+                Unleash your creativity in Automotive Photography, where we guide you through capturing stunning images of vehicles. Discover composition, lighting techniques, and inspiration to elevate your photography skills and showcase the beauty of automobiles.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+  
+
+    <!-- Team Section -->
+    <section id="committee" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Introducing</h2>
+        <div><span>Our committee</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex">
+              <div class="member-img">
+                <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="member-info flex-grow-1">
+                <h4>Alex</h4>
+                <span>- Founder and Director of Velosophy</span>
+                <p>BSc (Hons) First Class and Master Driver with the Institute of Advanced Motorists.</p>
+                <div class="social">
+                  <a href="https://www.cyberalex.uk/"><i class="bi bi-globe"></i></a>
+                  <a href="https://www.cyberalex.uk/contact.html"><i class="bi bi-envelope"></i></a>
+                  <a href="alex.html"><i class="bi bi-person-circle"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex">
+              <div class="member-img">
+                <img src="assets/img/person/person-m-6.webp" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="member-info flex-grow-1">
+                <h4>Caleb</h4>
+                <span>- Founding Advisor and Research Analyst</span>
+                <p>BSc (Hons) Upper Second Class and a member of several well respected motoring groups.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-globe"></i></a>
+                  <a href=""><i class="bi bi-envelope"></i></a>
+                  <a href="caleb.html"><i class="bi bi-person-circle"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+     
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+ 
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Find</h2>
+        <div><span>Our Contact</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Contact Info Boxes -->
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-info-box">
+              <div class="icon-box">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="info-content">
+                <h4>Location</h4>
+                <p>United Kingdom</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-info-box">
+              <div class="icon-box">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h4>Email Address</h4>
+                <p>enquiries&#64;velosophy.org.uk</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact-info-box">
+              <div class="icon-box">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div class="info-content">
+                <h4>Anticipated Response</h4>
+                <p>We expect to reply within a few hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    
+
+     
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Philosophia Velocitatis</span>
+          </a>
+          <h5>The Philosophy of Velocity</h5>
+          <!-- div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div -->
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#repertoire">Repertoire</a></li>
+            <li><a href="index.html#committee">Committee</a></li>
+            <li><a href="index.html#contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="termsandconditions.html">Terms and Conditions</a></li>
+            <li><a href="copyright.html">Copyright</a></li>
+            <li><a href="licences.html">Licences</a></li>
+            <li><a href="references.html">Cite this CRAAP</a></li>
+            <li><a href="affiliated.html">Affiliated Websites</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p><strong>Email:</strong> <span>enquiries&#64;velosophy.org.uk</span></p>
+        </div>
+
+      </div>
     </div>
 
-    <footer>
-      <hr>
-      <p>&copy; <span id="year"></span> Velosophy - All Rights Preserved</p>
-    </footer>
-  </div>
+    <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">velosophy.org.uk</strong> <span>All Rights Reserved</span> <span id="currentYear"></span></p>
+      <div class="credits">
+        Template courtesy of <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
+
+        const soundButton = document.getElementById('soundButton');
+        const sound = document.getElementById('sound');
+        let isPlaying = false;
+
+        soundButton.addEventListener('click', () => {
+            if (isPlaying) {
+                sound.pause();
+                sound.currentTime = 0; // Reset sound to start
+            } else {
+                sound.play();
+            }
+            isPlaying = !isPlaying; // Toggle the playing state
+        });
+
+    </script>
 </body>
+
 </html>
