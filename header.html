@@ -1,6 +1,35 @@
-<header class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Velosophy</a>
-  </div>
-</header>
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Velosophy</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="index.html#repertoire"><span>Repertoire</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="photohraphy.html">Automotive Photography</a></li>
+              <li><a href="driving.html">Driving Acumen</a></li>
+              <li><a href="detailing.html">Vehicle Detailing</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="index.html#committee"><span>Committee</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="alex.html">Alex</a></li>
+              <li><a href="caleb.html">Caleb</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#repertoire">Discover</a>
+
+    </div>
+  </header>
