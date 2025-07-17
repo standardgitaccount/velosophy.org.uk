@@ -333,74 +333,16 @@
             </div>
           </div>
         </div>
-
-      </div>
-
-    
-
-     
-      </div>
+        
+      </div>     
+    </div>
 
     </section><!-- /Contact Section -->
 
   </main>
 
-  <footer id="footer" class="footer">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Philosophia Velocitatis</span>
-          </a>
-          <h5>The Philosophy of Velocity</h5>
-          <!-- div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div -->
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html#repertoire">Repertoire</a></li>
-            <li><a href="index.html#committee">Committee</a></li>
-            <li><a href="index.html#contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Resources</h4>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="termsandconditions.html">Terms and Conditions</a></li>
-            <li><a href="copyright.html">Copyright</a></li>
-            <li><a href="licences.html">Licences</a></li>
-            <li><a href="references.html">Cite this CRAAP</a></li>
-            <li><a href="affiliated.html">Affiliated Websites</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p><strong>Email:</strong> <span>enquiries&#64;velosophy.org.uk</span></p>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">velosophy.org.uk</strong> <span>All Rights Reserved</span> <span id="currentYear"></span></p>
-      <div class="credits">
-        Template courtesy of <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
+ <!-- Footer will load here -->
+  <div id="footer"></div>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -421,9 +363,7 @@
   <script src="assets/js/main.js"></script>
 
     <script>
-        const currentYear = new Date().getFullYear();
-        document.getElementById('currentYear').textContent = currentYear;
-
+        // Listen button
         const soundButton = document.getElementById('soundButton');
         const sound = document.getElementById('sound');
         let isPlaying = false;
@@ -436,6 +376,14 @@
                 sound.play();
             }
             isPlaying = !isPlaying; // Toggle the playing state
+        });
+      
+        // Load header and footer
+        $(function () {
+          $("#header").load("header.html");
+          $("#footer").load("footer.html", function () {
+            document.getElementById("year").textContent = new Date().getFullYear();
+          });
         });
 
     </script>
